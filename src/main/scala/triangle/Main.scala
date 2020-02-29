@@ -10,9 +10,9 @@ object Main extends App {
       assert(row.length == index + 1, s"This is not a triangle. You can find a problem in row ${index + 1}")
     }
 
-  val solution = Triangle.findMinimumPath(triangle)
-  val path = solution.mkString(" + ")
+  val (value, path)= Triangle.findMinimumPath(triangle)
+  val pathString = path.mkString(" + ")
 
-  println(s"Minimal path is: ${path} = ${solution.sum}")
+  println(s"Minimal path is: $pathString = $value")
 
 }

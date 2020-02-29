@@ -13,4 +13,9 @@ After that, I realized that I was forgetting the elements of the shorter path. I
 of the shorter path...
 
 Finally, instead of applying the above idea directly, I was creating a new row but with arrays of ints instead of just ints.
-With this idea, I was able to apply my algorithm and also retrieve the complete path of elements that I have chose.  
+With this idea, I was able to apply my algorithm and also retrieve the complete path of elements that I have chose.
+
+#### Update
+
+I just realized that with the last idea I was computing the sums on every step, so I started to work with tuples in order 
+to have the sums calculated there.   
