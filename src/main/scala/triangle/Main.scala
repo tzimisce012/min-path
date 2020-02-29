@@ -6,7 +6,9 @@ object Main extends App {
 
   triangle
     .zipWithIndex
-    .foreach { case (row, index) => assert(row.length == index + 1, "This is not a triangle") }
+    .foreach { case (row, index) =>
+      assert(row.length == index + 1, s"This is not a triangle. You can find a problem in row ${index + 1}")
+    }
 
   val solution = Triangle.findMinimumPath(triangle)
   val path = solution.mkString(" + ")
